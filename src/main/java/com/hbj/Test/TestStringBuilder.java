@@ -26,7 +26,7 @@ public class TestStringBuilder {
             stringBuilder.append(s + user.getBirthday());
         }
 
-        if (!stringBuilder.isEmpty()){
+        if (stringBuilder.length()>0 && !"".equals(stringBuilder.toString()) && !"null".equals(stringBuilder.toString()) ){
             StringBuilder str = new StringBuilder();
             str = str.append("order by").append(stringBuilder) ;
             System.out.println(str);
@@ -56,7 +56,8 @@ public class TestStringBuilder {
             stringBuilder.append(s + user.getBirthday());
         }
 
-        if (!stringBuilder.isEmpty()){
+        if (stringBuilder.length()>0 && !"".equals(stringBuilder.toString()) && !"null".equals(stringBuilder.toString()) ){
+
             StringBuilder str = new StringBuilder();
             str = str.append("order by").append(stringBuilder) ;
             System.out.println(str);
@@ -67,9 +68,6 @@ public class TestStringBuilder {
 
 
     }
-   /* private static void initList() {
-        for(int i =0; i < 6; i++) {
-            dataList.add("第"+i+"个字符串");
-        }
-    }*/
+
+
 }
