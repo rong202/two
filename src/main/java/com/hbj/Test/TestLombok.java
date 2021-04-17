@@ -9,5 +9,6 @@ public class TestLombok {
        User user = new User();
        user.setId("1");
         System.out.println(user.getId());
+        System.out.println("ce");
     }
 }
